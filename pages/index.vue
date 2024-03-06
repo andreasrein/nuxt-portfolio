@@ -1,3 +1,12 @@
 <template>
-  Landningssida
+  <div class="relative flex flex-col-reverse md:flex-row md:justify-center md:items-center p-8 h-full max-w-[1400px] min-[1400px]:mx-auto">
+    <div class="flex-1 font-roboto md:ml-16 mt-4 md:mt-0">
+      <h1 class="text-7xl font-bold text-white">I'm <span>Andreas Reinholdsson</span>,<br> a <span>frontend developer</span> located in Stockholm.</h1>
+    </div>
+    <div class="flex-1 flex justify-center">
+      <div class="w-72 h-72 rounded-full overflow-hidden">
+        <img src="/img/portrait.png" alt="Portrait of Andreas Reinholdsson" class="h-full"/>
+      </div>
+    </div>
+  </div>
 </template>

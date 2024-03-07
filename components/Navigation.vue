@@ -23,7 +23,7 @@ const isOpen = ref(false)
 const handleExpanderClick = () => {
   isOpen.value = !isOpen.value
 }
-handleResize()
+// handleResize()
 
 </script>
 <template>

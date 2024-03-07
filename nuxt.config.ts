@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
+    '@vueuse/nuxt',
     '@nuxtjs/tailwindcss',
     ['@nuxtjs/google-fonts', {
       families: {

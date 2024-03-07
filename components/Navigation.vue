@@ -23,6 +23,11 @@ const isOpen = ref(false)
 const handleExpanderClick = () => {
   isOpen.value = !isOpen.value
 }
+
+const route = useRoute()
+watch(() => route.fullPath, () => {
+  isOpen.value = false
+})
 // handleResize()
 
 </script>

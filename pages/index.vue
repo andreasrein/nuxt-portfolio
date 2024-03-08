@@ -1,5 +1,5 @@
 <template>
-  <section class="relative flex flex-col-reverse md:flex-row md:justify-center md:items-center p-8 max-w-[1400px] min-[1400px]:mx-auto">
+  <section class="relative flex-1 flex flex-col-reverse md:flex-row md:justify-center md:items-center px-8 max-w-[1400px] min-[1400px]:mx-auto">
     <div class="flex-1 font-roboto md:ml-16 mt-4 md:mt-0">
       <h1 class="text-4xl sm:text-7xl font-bold">I'm <span class="bg-gradient-to-r from-rose-300 to-amber-400 text-transparent bg-clip-text">Andreas Reinholdsson</span>,<br> a <span>frontend developer</span> located in Stockholm.</h1>
     </div>

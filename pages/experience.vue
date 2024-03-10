@@ -14,7 +14,7 @@
 </script>
 
 <template>
-  <section class="flex flex-col justify-center px-8 max-w-[1400px] min-[1400px]:mx-auto">
+  <section class="flex flex-col justify-center px-8 py-16 max-w-[1400px] min-[1400px]:mx-auto">
     <article class="mb-24 grid grid-cols-1 md:grid-cols-3 justify-center gap-8 md:gap-16">
       <div class="flex flex-col items-center">
         <div class="flex justify-center items-center h-28 w-28 bg-amber-300 rounded-full shadow mb-6">

@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col justify-center px-8 max-w-[1400px] min-[1400px]:mx-auto">
+  <section class="flex flex-col justify-center px-8 py-16 max-w-[1400px] min-[1400px]:mx-auto">
     <h1 class="text-4xl sm:text-7xl font-bold mb-8">This is me...</h1>
     <div class="text-lg mb-8">
       <p class="mb-4">

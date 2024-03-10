@@ -53,7 +53,7 @@ const links = [
 ]
 </script>
 <template>
-  <nav ref="navbar" class="z-10 right-0 flex flex-col items-end">
+  <nav ref="navbar" class="absolute z-10 right-0 flex flex-col items-end">
     <div class="right-0 top-0 z-10">
       <button class="p-8" @click="handleExpanderClick">
         <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48" class="fill-white"><path d="M95-203v-95h771v95H95Zm0-230v-94h771v94H95Zm0-229v-95h771v95H95Z"/></svg>

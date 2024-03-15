@@ -1,39 +1,13 @@
 <script setup lang="ts">
-onMounted(() => {
-  window.addEventListener('click', handleMenuClose)
-})
-onUnmounted(() => {
-  window.removeEventListener('click', handleMenuClose)
-})
-
-// TODO: USE LATER
-
-// import { useDebounceFn } from '@vueuse/core'
-
-// onMounted(() => {
-//   window.addEventListener("resize", handleResize);
-// })
-// onUnmounted(() => {
-//   window.removeEventListener("resize", handleResize);
-// })
-
-// const isSmallDevice = ref(true)
-// const handleResize = useDebounceFn(() => {
-//   if (window.innerWidth > 640) {
-//     isSmallDevice.value = false
-//   } else {
-//     isSmallDevice.value = true
-//   }
-// }, 200)
-// handleResize()
 const isOpen = ref(false)
 const handleExpanderClick = () => {
   isOpen.value = !isOpen.value
 }
 
-const navbar = ref(null)
-const handleMenuClose = (e) => {
-  if (isOpen && !navbar.value.contains(e.target)) {
+const navbar = ref<HTMLElement | null>(null)
+// TODO: Specify event types better
+const handleMenuClose = (e: any) => {
+  if (isOpen && !navbar.value?.contains(e.target)) {
     isOpen.value = false
   }
 }
@@ -43,6 +17,14 @@ const activePath = ref('/')
 watch(() => route.fullPath, () => {
   activePath.value = route.fullPath
   isOpen.value = false
+})
+
+onMounted(() => {
+  activePath.value = route.fullPath
+  window.addEventListener('click', handleMenuClose)
+})
+onUnmounted(() => {
+  window.removeEventListener('click', handleMenuClose)
 })
 
 const links = [

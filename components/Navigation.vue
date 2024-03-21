@@ -1,40 +1,40 @@
 <script setup lang="ts">
-const isOpen = ref(false)
-const handleExpanderClick = () => {
-  isOpen.value = !isOpen.value
-}
-
-const navbar = ref<HTMLElement | null>(null)
-// TODO: Specify event types better
-const handleMenuClose = (e: any) => {
-  if (isOpen && !navbar.value?.contains(e.target)) {
-    isOpen.value = false
+  const isOpen = ref(false)
+  const handleExpanderClick = () => {
+    isOpen.value = !isOpen.value
   }
-}
 
-const route = useRoute()
-const activePath = ref('/')
-watch(() => route.fullPath, () => {
-  activePath.value = route.fullPath
-  isOpen.value = false
-})
+  const navbar = ref<HTMLElement | null>(null)
+  // TODO: Specify event types better
+  const handleMenuClose = (e: any) => {
+    if (isOpen && !navbar.value?.contains(e.target)) {
+      isOpen.value = false
+    }
+  }
 
-onMounted(() => {
-  activePath.value = route.fullPath
-  window.addEventListener('click', handleMenuClose)
-})
-onUnmounted(() => {
-  window.removeEventListener('click', handleMenuClose)
-})
+  const route = useRoute()
+  const activePath = ref('/')
+  watch(() => route.fullPath, () => {
+    activePath.value = route.fullPath
+    isOpen.value = false
+  })
 
-const links = [
-  {path: '/', title: 'HOME'},
-  {path: '/about', title: 'ABOUT'},
-  {path: '/experience', title: 'EXPERIENCE'}
-]
+  onMounted(() => {
+    activePath.value = route.fullPath
+    window.addEventListener('click', handleMenuClose)
+  })
+  onUnmounted(() => {
+    window.removeEventListener('click', handleMenuClose)
+  })
+
+  const links = [
+    {path: '/', title: 'HOME'},
+    {path: '/about', title: 'ABOUT'},
+    {path: '/experience', title: 'EXPERIENCE'}
+  ]
 </script>
 <template>
-  <nav ref="navbar" class="absolute z-10 right-0 flex flex-col items-end">
+  <nav ref="navbar" class="z-10 right-0 flex flex-col items-end">
     <div class="right-0 top-0 z-10">
       <button class="p-8" @click="handleExpanderClick">
         <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48" class="fill-white">

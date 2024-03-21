@@ -39,9 +39,10 @@ async function handleFormSubmit(event: Event) {
 
 </script>
 <template>
-  <div class="fixed bottom-4 right-[4vw] sm:right-6">
+  <div class="fixed bottom-4 right-[4vw] sm:right-6 z-50">
     <button
-      class="bg-white shadow-lg text-emerald-500 font-bold rounded-lg px-4 py-2"
+      class="transition-all bg-white shadow-lg text-emerald-500 font-bold rounded-lg px-4 py-2 opacity-100"
+      :class="{'opacity-0': showForm}"
       @click="handleContactClick">
       Contact Me!
     </button>
@@ -50,9 +51,9 @@ async function handleFormSubmit(event: Event) {
       :class="{'h-[85vh] w-[92vw] md:w-[50vw] lg:w-[460px]': showForm, 'h-0 w-0': !showForm}"
     >
       <div class="h-full p-4 sm:p-8 overflow-auto">
-        <div class="flex justify-between text-black mb-8">
+        <div class="flex justify-between items-center text-black mb-8">
           <h2 class="text-4xl font-bold text-emerald-500">Contact me</h2>
-          <button @click="handleContactClick">
+          <button @click="handleContactClick" class="transition-colors hover:bg-emerald-500/10 rounded-full p-3 flex justify-center items-center">
             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="fill-emerald-500"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
           </button>
         </div>
@@ -102,56 +103,4 @@ async function handleFormSubmit(event: Event) {
       </div>
     </section>
   </div>
-  <!-- <LayoutSection>
-    <h1 class="text-4xl sm:text-7xl font-bold mb-8">Contact</h1>
-    <div class="flex gap-8 md:gap-16 flex-col md:flex-row">
-      <div class="flex-1 flex flex-col justify-between">
-        <div class="flex flex-col justify-center mb-4 text-xl mb:text-3xl">
-          <p class="mb-4">
-            Do you want to get in touch with me?
-          </p>
-          <p>
-            I'm always open to connect and have a chat.
-            Feel free to fill out my contact form or give me a call!
-          </p>
-        </div>
-        <div class="bg-black/10 rounded p-4 sm:p-8">
-          <div class="flex gap-2 items-center mb-2">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="#fff"><path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v720q0 33-23.5 56.5T680-40H280Zm0-200h400v-480H280v480Z"/></svg>
-            <a href="tel:+46768619378">+46 (0)76 861 93 78</a>
-          </div>
-          <div class="flex gap-2 items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="#fff"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280 320-200v-80L480-520 160-720v80l320 200Z"/></svg>
-            <a href="mailto:reinholdsson.andreas@gmail.com">reinholdsson.andreas@gmail.com</a>
-          </div>
-        </div>
-        
-      </div>
-      <div class="p-8 flex-1 bg-black/10 rounded">
-        <form class="flex flex-col" id="my-form" @submit.prevent="handleFormSubmit">
-          <div class="flex flex-col mb-4 font-roboto text-xl">
-            <label for="name" class="mb-2">
-              Name
-            </label>
-            <input class="rounded p-2 text-black bg-white/15 border shadow-inner" id="name" type="name" name="name" v-model="name" />
-          </div>
-          <div class="flex flex-col mb-4 font-roboto text-xl">
-            <label for="email" class="mb-2">
-              Email
-            </label>
-            <input class="rounded p-2 text-black bg-white/15 border shadow-inner" id="email" type="email" name="email" v-model="email" />
-          </div>
-          <div class="flex flex-col mb-8 font-roboto text-xl">
-            <label for="message" class="mb-2">
-              Message
-            </label>
-            <textarea class="rounded p-2 text-black bg-white/15 border shadow-inner" id="message" type="text" name="message" v-model="message" rows="5" />
-          </div>
-          <div class="text-right">
-            <Button type="submit">Submit</Button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </LayoutSection> -->
 </template>

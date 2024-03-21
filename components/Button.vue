@@ -3,7 +3,8 @@
     title?: string,
     path?: string,
     type?: 'submit' | 'reset' | 'button',
-    inverted?: boolean
+    inverted?: boolean,
+    download?: string
   }
   const props = withDefaults(defineProps<Props>(), {
     type: 'button',
@@ -13,10 +14,13 @@
 </script>
 
 <template>
-  <NuxtLink v-if="path" :to={path} :class="btnClasses">
+  <NuxtLink v-if="path && !download" :to={path} :class="btnClasses">
     <slot></slot>
   </NuxtLink>
-  <button v-else :class="btnClasses" :type="props.type">
+  <button v-if="!path" :class="btnClasses" :type="props.type">
     <slot></slot>
   </button>
+  <a v-if="path && download" :href="path" :download="download" :class="btnClasses">
+    <slot></slot>
+  </a>
 </template>

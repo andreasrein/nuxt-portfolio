@@ -43,7 +43,7 @@
         Earlier assignments
       </h1>
       <div>
-        <Button><img src="/img/download.svg" alt="download resume" class="inline mr-1">Download resume</Button>
+        <Button path="/files/Andreas_Reinholdsson_CV.pdf" download="Andreas_Reinholdsson_CV"><img src="/img/download.svg" alt="download resume" class="inline mr-1">Download CV</Button>
       </div>
     </div>
     <article>

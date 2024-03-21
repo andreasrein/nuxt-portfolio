@@ -20,7 +20,7 @@
   <button v-if="!path" :class="btnClasses" :type="props.type">
     <slot></slot>
   </button>
-  <a v-if="path && download" :href="path" :download="download" :class="btnClasses">
+  <a v-if="path && download" :href="path" :download="download" target="_blank" :class="btnClasses">
     <slot></slot>
   </a>
 </template>

@@ -1,5 +1,5 @@
 <template>
-    <LayoutSection>
+  <LayoutSection>
     <h1 class="text-4xl sm:text-7xl font-bold mb-8">This is me...</h1>
     <div class="text-lg mb-8">
       <p class="mb-4">

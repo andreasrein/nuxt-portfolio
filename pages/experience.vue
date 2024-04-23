@@ -1,4 +1,6 @@
 <script setup lang="ts">
+  const { data } = await useAsyncData(() => queryContent('experience').findOne());
+
   const yearsOfExperience = () => {
     const now = new Date().getFullYear()
     const d = new Date("2017-01-01").getFullYear()
@@ -14,7 +16,7 @@
 </script>
 
 <template>
-  <LayoutSection>
+  <LayoutSection>    
     <article class="mb-24 grid grid-cols-1 md:grid-cols-3 justify-center gap-8 md:gap-16">
       <div class="flex flex-col items-center">
         <div class="flex justify-center items-center h-28 w-28 bg-amber-300 rounded-full shadow mb-6">
@@ -46,7 +48,10 @@
         <Button path="/files/Andreas_Reinholdsson_CV.pdf" download="Andreas_Reinholdsson_CV"><img src="/img/download.svg" alt="download resume" class="inline mr-1">Download CV</Button>
       </div>
     </div>
-    <article>
+    <article id="markdown-content">
+      <ContentRendererMarkdown v-if="data" :value="data"/>
+    </article>
+    <!-- <article>
       <h2 class="text-4xl font-bold text-emerald-200">Feelgood AB</h2>
       <span class="font-thin">APR 2018 - APR 2023</span>
       <div class="mt-8">
@@ -61,18 +66,24 @@
           Andreas also developed the customer service solution together with his team, which was used as an everyday tool by the phone support to be able to quickly search and find specific doctors and nurses based on skill set and geographic location.
         </p>
       </div>
-    </article>
+    </article> -->
     <!-- TBD: Fill with content -->
   </LayoutSection>
 </template>
 <style lang="css">
-progress[value]::-webkit-progress-bar {
-  background-color: #eee;
-  border-radius: 2px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
-}
-progress[value]::-webkit-progress-value {
-  @apply bg-gradient-to-r from-emerald-800 to-emerald-600;
-  border-radius: 2px;
-}
+  progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  }
+  progress[value]::-webkit-progress-value {
+    @apply bg-gradient-to-r from-emerald-800 to-emerald-600;
+    border-radius: 2px;
+  }
+  #markdown-content h2 { @apply text-4xl font-bold text-emerald-200}
+  #markdown-content h2:not(:first-child) { @apply mt-16}
+  #markdown-content h3 { @apply font-thin mb-8 text-lg}
+  #markdown-content p { @apply mb-4}
+  /* #markdown-content p:last-child { @apply mb-16} */
+  #markdown-content em { @apply font-thin}
 </style>

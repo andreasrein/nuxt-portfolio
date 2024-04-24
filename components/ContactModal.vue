@@ -39,12 +39,12 @@ async function handleFormSubmit(event: Event) {
 
 </script>
 <template>
-  <div class="fixed bottom-4 right-[4vw] sm:right-6 z-50">
+  <div class="fixed bottom-4 right-[4vw] sm:right-6 z-40">
     <button
-      class="transition-all bg-white shadow-lg text-emerald-500 font-bold rounded-lg px-4 py-2 opacity-100"
+      class="w-52 h-14 flex justify-center items-center bg-brush-stroke bg-contain bg-no-repeat transition-all hover:scale-110"
       :class="{'opacity-0': showForm}"
       @click="handleContactClick">
-      Contact Me!
+      <div class="text-emerald-500 font-bold text-xl mb-1">Contact me!</div>
     </button>
     <section
       class="absolute rounded bg-white shadow-2xl transition-all bottom-0 right-0 overflow-hidden"

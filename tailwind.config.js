@@ -4,6 +4,11 @@ module.exports = {
   theme: {
     fontFamily: {
       roboto: ["Roboto", ...defaultTheme.fontFamily.sans],
+    },
+    extend: {
+      backgroundImage: {
+        'brush-stroke': "url('/img/brush1.svg')"
+      }
     }
   },
 }

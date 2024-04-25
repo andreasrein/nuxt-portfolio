@@ -1,6 +1,6 @@
 ## Alcesys AB | Fullstack Developer   
 ### NOV 2023 -   
-Refactoring and improving the existing company website for Alcesys. I was in a team with another developer, leading the development towards Next.js.   
+Refactoring and improving the existing company website for Alcesys. I was in a team with another developer, leading the development towards Next.js.
 After having completed the refactoring we started focusing on future features as login and other informal pages.   
 
 **Tools:** *React, Next, TypeScript, Tailwind CSS, CSS3, HTML5, JSX, Git, GitLab, Sketch, Gatsby, GraphQL, SASS*   

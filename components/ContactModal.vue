@@ -17,15 +17,14 @@ const setFormStatus = (val: 'unsent' | 'pending' | 'success' | 'error') => {
 
 async function handleFormSubmit(event: Event) {
   setFormStatus('pending')
-
   try {
     const body = new FormData(event.target as HTMLFormElement)
     await $fetch('https://formspree.io/f/xleqlbjz', {
       method: 'POST',
       headers: { 'Accept': 'application/json' },
       body
-    }).then((res) => {
-      if (res.ok) {
+    }).then(res => {
+      if (res) {
         return setFormStatus('success')
       } else {
         return setFormStatus('error')
@@ -47,8 +46,8 @@ async function handleFormSubmit(event: Event) {
       <div class="text-emerald-500 font-bold text-xl mb-1">Contact me!</div>
     </button>
     <section
-      class="absolute rounded bg-white shadow-2xl transition-all bottom-0 right-0 overflow-hidden"
-      :class="{'h-[85vh] w-[92vw] md:w-[50vw] lg:w-[460px]': showForm, 'h-0 w-0': !showForm}"
+      class="absolute rounded bg-white shadow-2xl transition-all bottom-0 overflow-hidden max-h-[730px] h-[85vh] w-[92vw] md:w-[50vw] lg:w-[460px]"
+      :class="{'-right-[96vw] md:-right-[54vw] lg:-right-[500px]': !showForm, 'right-0 md:right-0 lg:right-0': showForm}"
     >
       <div class="h-full p-4 sm:p-8 overflow-auto">
         <div class="flex justify-between items-center text-black mb-8">

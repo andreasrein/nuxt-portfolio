@@ -8,6 +8,9 @@ module.exports = {
     extend: {
       backgroundImage: {
         'brush-stroke': "url('/img/brush1.svg')"
+      },
+      fontFamily: {
+        marker: ["Permanent Marker", "cursive"],
       }
     }
   },

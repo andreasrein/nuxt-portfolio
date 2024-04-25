@@ -13,7 +13,7 @@ I have long been interested in music and art, but it wasn't until now that I dis
         With my previous aesthetic interests, I feel like a strong frontend developer with an eye and a feel for details. This greatly facilitates my work as I now closely collaborate with designers.
       </p>
     </div>
-    <div class="grid grid-cols-2 lg:grid-cols-3 mx-auto -gap-4 md:gap-4 my-16">
+    <div class="grid grid-cols-2 lg:grid-cols-3 mx-auto -gap-4 md:gap-4 mt-16 mb-20">
       <Polaroid title="DIVING - LIDINGÖ 2019" class="rotate-6 flex-none">
         <img src="/img/diving.png" alt="Image of Andreas diving" />
       </Polaroid>
@@ -35,7 +35,8 @@ I have long been interested in music and art, but it wasn't until now that I dis
     </div>
     <div class="flex justify-center">
       <Button path="/experience">
-        Check out my experience!
+        <img src="/img/2x_arrow.svg" alt="double arrow icon" class="inline">
+        <span class="ml-2">Check out my experience</span>
       </Button>
     </div>
   </LayoutSection>

@@ -10,7 +10,7 @@
     type: 'button',
     inverted: false
   })
-  const btnClasses = `transition-all inline-block ${props.inverted ? 'bg-emerald-500 rounded-lg inline-block py-2 px-4 font-bold text-white hover:scale-105 hover:bg-rose-200' : 'bg-white border-none rounded-lg text-black mix-blend-screen py-2 px-4 font-bold hover:scale-105 hover:bg-rose-200'} `
+  const btnClasses = `transition-all inline-block ${props.inverted ? 'bg-emerald-500 rounded-lg inline-block py-2 px-4 font-bold text-white hover:scale-105 hover:bg-emerald-700' : 'border-2 border-white text-white rounded-full py-2 px-4 font-bold hover:scale-105 hover:bg-emerald-500'} `
 </script>
 
 <template>

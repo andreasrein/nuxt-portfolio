@@ -13,6 +13,10 @@
     {title: "Testing", percentage: 85},
     {title: "Design", percentage: 89},
   ]
+
+  const handleClick = () => {
+    window.scroll({top: 0, behavior: 'smooth'})
+  }
 </script>
 
 <template>
@@ -48,9 +52,15 @@
         <Button path="/files/Andreas_Reinholdsson_CV.pdf" download="Andreas_Reinholdsson_CV"><img src="/img/download.svg" alt="download resume" class="inline mr-1">Download CV</Button>
       </div>
     </div>
-    <article id="markdown-content">
+    <article id="markdown-content" class="mb-8">
       <ContentRendererMarkdown v-if="data" :value="data"/>
     </article>
+    <div class="flex justify-center">
+      <Button @click="handleClick">
+        <img src="/img/2x_arrow_top.svg" alt="double arrow icon" class="inline">
+        <span class="ml-2">Back to the top</span>
+      </Button>
+    </div>
   </LayoutSection>
 </template>
 <style lang="css">
@@ -63,10 +73,9 @@
     @apply bg-gradient-to-r from-emerald-800 to-emerald-600;
     border-radius: 2px;
   }
-  #markdown-content h2 { @apply text-4xl font-bold text-emerald-200}
+  #markdown-content h2 { @apply text-2xl md:text-4xl font-bold text-emerald-200}
   #markdown-content h2:not(:first-child) { @apply mt-16}
   #markdown-content h3 { @apply font-thin mb-4 mt-1 text-lg}
   #markdown-content p { @apply mb-4}
-  /* #markdown-content p:last-child { @apply mb-16} */
   #markdown-content em { @apply font-thin}
 </style>

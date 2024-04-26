@@ -6,7 +6,7 @@ After having completed the refactoring we started focusing on future features as
 **Tools:** *React, Next, TypeScript, Tailwind CSS, CSS3, HTML5, JSX, Git, GitLab, Sketch, Gatsby, GraphQL, SASS*   
 
 ## Skälby Bryggeri | Fullstack Developer
-### NOV 2023 - SEP 2023
+### SEP 2023 - NOV 2023
 
 I worked together with the customer to develop a lightweight and easy manageable solution for a micro brewery to be able to post updates from a CMS interface.   
 

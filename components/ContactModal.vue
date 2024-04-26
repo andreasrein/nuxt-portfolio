@@ -61,10 +61,10 @@ async function handleFormSubmit(event: Event) {
 <template>
   <div class="fixed bottom-4 right-[4vw] sm:right-6 z-40">
     <button
-      class="w-52 h-14 flex justify-center items-center bg-brush-stroke bg-contain bg-no-repeat transition-all hover:scale-110"
+      class="w-40 h-10 md:w-56 md:h-14 flex justify-center items-center bg-brush-stroke bg-cover bg-no-repeat transition-all hover:scale-110"
       :class="{'opacity-0': showForm}"
       @click="handleContactClick">
-      <div class="text-emerald-500 font-bold text-xl mb-1">Contact me!</div>
+      <div class="text-emerald-500 font-bold text-sm md:text-xl mb-1">Contact me!</div>
     </button>
     <section
       class="absolute rounded bg-white shadow-2xl transition-all bottom-0 overflow-hidden max-h-[730px] h-[85vh] w-[92vw] md:w-[50vw] lg:w-[460px]"
@@ -72,7 +72,7 @@ async function handleFormSubmit(event: Event) {
     >
       <div class="h-full p-4 sm:p-8 overflow-auto">
         <div class="flex justify-between items-center text-black mb-8">
-          <h2 class="text-4xl font-bold text-emerald-500">Contact me</h2>
+          <h2 class="text-4xl font-bold text-emerald-500">Contact Me</h2>
           <button @click="handleContactClick" class="transition-colors hover:bg-emerald-500/10 rounded-full p-3 flex justify-center items-center">
             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="fill-emerald-500"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
           </button>

@@ -1,4 +1,11 @@
 <script setup lang="ts">
+useServerSeoMeta({
+  title: 'Andreas Reinholdsson',
+  ogTitle: 'Andreas Reinholdsson',
+  description: 'Andreas Reinholdssons work history and professional profile',
+  ogDescription: 'Andreas Reinholdssons work history and professional profile',
+  ogImage: 'https://reinholdsson.dev/img/portrait.png'
+})
 useHead({
   title: 'Andreas Reinholdsson',
   meta: [

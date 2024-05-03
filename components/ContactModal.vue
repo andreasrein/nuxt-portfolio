@@ -92,7 +92,7 @@ const resetForm = () => {
       <div class="text-emerald-500 font-bold text-sm md:text-xl mb-1">Contact me!</div>
     </button>
     <section
-      class="absolute rounded bg-white shadow-2xl transition-all bottom-0 overflow-hidden md:max-h-[750px] h-[90vh] w-[92vw] md:w-[50vw] lg:w-[460px]"
+      class="absolute rounded bg-white shadow-2xl transition-all bottom-0 overflow-hidden md:max-h-[780px] h-[90vh] w-[92vw] md:w-[50vw] lg:w-[460px]"
       :class="{'-right-[96vw] md:-right-[54vw] lg:-right-[500px]': !showForm, 'right-0 md:right-0 lg:right-0': showForm}"
     >
       <div class="h-full p-4 sm:p-8 overflow-auto">
@@ -105,11 +105,15 @@ const resetForm = () => {
         <div class="bg-emerald-500/10 text-emerald-500 rounded p-4 sm:p-8 mb-8">
           <div class="flex gap-2 items-center mb-2 hover:underline">
             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="fill-emerald-500"><path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v720q0 33-23.5 56.5T680-40H280Zm0-200h400v-480H280v480Z"/></svg>
-            <a href="tel:+46768619378" class="text-xs sm:text-base">+46 (0)76 861 93 78</a>
+            <a href="tel:+46768619378" target="_blank" class="text-xs sm:text-base">+46 (0)76 861 93 78</a>
           </div>
-          <div class="flex gap-2 items-center transition-all hover:underline">
+          <div class="flex gap-2 items-center mb-2 transition-all hover:underline">
             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="fill-emerald-500"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280 320-200v-80L480-520 160-720v80l320 200Z"/></svg>
-            <a href="mailto:reinholdsson.andreas@gmail.com" class="text-xs sm:text-base">reinholdsson.andreas@gmail.com</a>
+            <a href="mailto:reinholdsson.andreas@gmail.com" target="_blank" class="text-xs sm:text-base">reinholdsson.andreas@gmail.com</a>
+          </div>
+          <div class="flex gap-2 items-center hover:underline">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="24px" height="24px" class="fill-emerald-500"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/></svg>
+            <a href="https://www.linkedin.com/in/andreas-reinholdsson/" target="_blank" class="text-xs sm:text-base">LinkedIn Profile</a>
           </div>
         </div>
         <div v-if="formStatus === 'error'" class="rounded bg-red-600/50 p-4 mb-4">

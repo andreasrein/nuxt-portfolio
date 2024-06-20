@@ -37,7 +37,7 @@
 <template>
   <nav ref="navbar" class="z-10 right-0 flex flex-col items-end sticky top-0">
     <div class="right-0 z-10">
-      <button class="p-8 transition-colors hover:bg-white/10" @click="handleExpanderClick">
+      <button class="p-8 transition-colors hover:bg-white/10" @click="handleExpanderClick" aria-label="Menu">
         <div class="w-12 h-9 relative transition">
           <span class="origin-top-left" :class="spanClasses, {'rotate-45 -top-[1px] left-[8px]': isOpen, 'rotate-0 top-0 left-0': !isOpen}"></span>
           <span class="origin-left top-[15px] left-0" :class="spanClasses, {'opacity-0 w-0': isOpen, 'opacity-100': !isOpen}"></span>

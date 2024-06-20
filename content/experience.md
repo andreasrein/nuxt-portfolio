@@ -5,6 +5,13 @@ After having completed the refactoring we started focusing on future features as
 
 **Tools:** *React, Next, TypeScript, Tailwind CSS, CSS3, HTML5, JSX, Git, GitLab, Sketch, Gatsby, GraphQL, SASS*   
 
+## ADHD Online | Web Manager & UI/UX-Designer   
+### MAY 2024 -   
+
+At ADHD Online, I was responsible for improving and maintaining their website. Initially, I delved into the Google Ads campaigns, which were not performing well, where I cleaned up and optimized the budget for better results. After that, I have been continuously working on adding content based on requests as well as organizing and inventorying existing content. I was also responsible for reviewing and improving the design to ensure the site gives a professional and cohesive impression.   
+
+**Tools:** *Wordpress, CSS3, HTML5, Google Ads, Google Analytics, Sketch, Adobe Photoshop, Adobe Illustrator*   
+
 ## Skälby Bryggeri | Fullstack Developer
 ### SEP 2023 - NOV 2023
 

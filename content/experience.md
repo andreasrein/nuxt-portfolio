@@ -1,9 +1,14 @@
-## Alcesys AB | Fullstack Developer   
-### NOV 2023 -   
-Refactoring and improving the existing company website for Alcesys. I was in a team with another developer, leading the development towards Next.js.
-After having completed the refactoring we started focusing on future features as login and other informal pages.   
+<div className="experience-block">
 
-**Tools:** *React, Next, TypeScript, Tailwind CSS, CSS3, HTML5, JSX, Git, GitLab, Sketch, Gatsby, GraphQL, SASS*   
+  ## Alcesys AB | Fullstack Developer   
+  ### NOV 2023 -   
+  Refactoring and improving the existing company website for Alcesys. I was in a team with another developer, leading the development towards Next.js.
+  After having completed the refactoring we started focusing on future features as login and other informal pages.   
+
+  **Tools:** *React, Next, TypeScript, Tailwind CSS, CSS3, HTML5, JSX, Git, GitLab, Sketch, Gatsby, GraphQL, SASS*   
+
+</div>
+<div className="experience-block">
 
 ## ADHD Online | Web Manager & UI/UX-Designer   
 ### MAY 2024 -   
@@ -12,6 +17,9 @@ At ADHD Online, I was responsible for improving and maintaining their website. I
 
 **Tools:** *Wordpress, CSS3, HTML5, Google Ads, Google Analytics, Sketch, Adobe Photoshop, Adobe Illustrator*   
 
+</div>
+<div className="experience-block">
+
 ## Skälby Bryggeri | Fullstack Developer
 ### SEP 2023 - NOV 2023
 
@@ -19,8 +27,14 @@ I worked together with the customer to develop a lightweight and easy manageable
 
 **Tools:** *Next.js, React, TypeScript, Tailwind CSS, Strapi, PostgreSQL, Heroku, Vercel*   
 
+</div>
+<div className="experience-block">
+
 ## Parental leave
 ### APR 2023 - SEP 2023
+
+</div>
+<div className="experience-block">
 
 ## Feelgood AB | Frontend Developer
 ### APR 2018 - APR 2023
@@ -34,6 +48,8 @@ I also had the opportunity to develop the customer service solution together wit
 
 **Tools:** *Vue, Vuex, Webpack, Rollup, Vue Router, SCSS, TypeScript, Cypress, Git, JSON, Shortcut, Docker, Rancher, Mobile first, Responsive design, Python, Agile, Scrum, Sketch, Figma, Stencil, Web components, Design Systems, RESTful API, Micro-services, Accessibility (WCAG 2.1), Postman*   
 
+</div>
+<div className="experience-block">
 
 ## Alcesys AB | Fullstack Developer
 ### FEB 2020 - JUL 2020
@@ -42,6 +58,9 @@ I worked in a team together with another developer making the technical decision
 
 **Tools:** *React, Gatsby, GraphQL, SCSS, Git, GitLab, Static sites, JAMstack, design, Responsive design, Agile*   
 
+</div>
+<div className="experience-block">
+
 ## EVRY/Länsförsäkringar | Frontend Developer
 ### MAR 2018 - APR 2018
 
@@ -49,12 +68,18 @@ As a team we developed different client side solutions for Länsförsäkringar. 
 
 **Tools:** *React, Bootstrap, CSS3, HTML5, Underscore, JIRA, Design systems, Agile*   
 
+</div>
+<div className="experience-block">
+
 ## Oden Business Intelligence | Frontend Developer
 ### JAN 2018 - MAR 2018
 
 Together with a development team, we built a new website for Oden Business Intelligence. The website is an informative site with focus on sales. Among other things I implemented the functionality and design based on a designer's wireframes.
 
 **Tools:** *Wordpress, JavaScript, Sage Roots 9, HTML5, SCSS, PHP, MySQL, SQL, Responsive design, Agile*   
+
+</div>
+<div className="experience-block">
 
 ## EA/DICE | Frontend Developer
 ### JUL 2017 - DEC 2017
@@ -64,12 +89,19 @@ Later on I was given the opportunity to develop the admin web interface for the 
 
 **Tools:** *React, JavaScript, HTML5, SCSS, Flux, REST, Confluence, JIRA, JSON, Responsive design, Agile*   
 
+</div>
+<div className="experience-block">
+
+
 ## Oden Business Intelligence | Frontend Developer
 ### APR 2017 - JUN 2017
 
 I developed a web application for Oden BI, a business system for organizations. The applications gave Salesmen the ability to follow different KPIs to see how a specific company trends on the market.
 
 **Tools:** *React, Redux, JavaScript, Mobile first, HTML5, CSS3, Agile*   
+
+</div>
+<div className="experience-block">
 
 ## Energi- & Klimatrådgivningen | Frontend Developer
 ### MAR 2017 - APR 2017
@@ -78,9 +110,14 @@ I was working on a project for Stockholm Stad together with a team to create a w
 
 **Tools:** *React, Node.js, JavaScript, Git, Babel, Webpack, SCSS, ES6, JSON, Responsive design, Agile*
 
+</div>
+<div className="experience-block">
+
 ## Chas Visual Management | Frontend Developer
 ### JAN 2017 - FEB 2017
 
 At Chas I had the opportunity to develop the new version of chas.se. Together with a backend developer I implemented the design based on mockups and wireframes with a focus on animations and responsiveness.
 
 **Tools:** *HTML5, CSS3, SCSS, Wordpress, Sage Roots, Bootstrap 4, PHP, jQuery, JavaScript, Responsive design, Mobile first responsive design, Agile*
+
+</div>

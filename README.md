@@ -1,4 +1,4 @@
-# Andreas Reinholdsson´s portfilio project
+# Andreas Reinholdsson´s portfolio project
 
 [https://reinholdsson.dev](https://reinholdsson.dev)
 

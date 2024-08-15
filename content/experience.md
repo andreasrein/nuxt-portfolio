@@ -2,7 +2,7 @@
 
   ## Arbetsförmedlingen | Frontend Developer   
   ### MAY 2024 - JUNE 2024  
-  This project was started to help a colleague at Arbetsförmedlingen to handle authorization keys in backend with an intuitive interface.   
+  This project was started to help a colleague at Arbetsförmedlingen to handle authorization keys in the backend with an intuitive interface.   
 
   **Tools:** *JavaScript, TypeScript, React, MSW, Digi Core (Design System)*   
 

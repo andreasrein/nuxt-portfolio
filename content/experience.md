@@ -1,5 +1,15 @@
 <div className="experience-block">
 
+  ## Arbetsförmedlingen | Frontend Developer   
+  ### MAY 2024 - JUNE 2024  
+  This project was started to help a colleague at Arbetsförmedlingen to handle authorization keys in the backend with an intuitive interface.   
+
+  **Tools:** *JavaScript, TypeScript, React, MSW, Digi Core (Design System)*   
+
+</div>
+
+<div className="experience-block">
+
   ## Alcesys AB | Fullstack Developer   
   ### NOV 2023 -   
   Refactoring and improving the existing company website for Alcesys. I was in a team with another developer, leading the development towards Next.js.
